@@ -19,18 +19,19 @@
         <header id="header">
             <div class="content">
                 <nav class="navbar">
-                    <img
-                        src="./assets/image/logo.svg"
-                        alt="Lesson."
-                        class="image"
-                    />
-
+                    <a href="#">
+                        <img
+                            src="./assets/image/logo.svg"
+                            alt="Lesson."
+                            class="image"
+                        />
+                    </a>
                     <div class="navbar-group">
                         <ul class="list">
-                            <li><a href="#!" class="link">Home</a></li>
-                            <li><a href="#!" class="link">Courses</a></li>
-                            <li><a href="#!" class="link">Pricing</a></li>
-                            <li><a href="#!" class="link">Reviews</a></li>
+                            <li><a href="#" class="link">Home</a></li>
+                            <li><a href="#course" class="link">Courses</a></li>
+                            <li><a href="#pricing" class="link">Pricing</a></li>
+                            <li><a href="#review" class="link">Reviews</a></li>
                         </ul>
                         <button class="btn-cta">Sign Up</button>
                     </div>
@@ -157,7 +158,7 @@
             </div>
 
             <!-- Popular Course -->
-            <div class="popular-course">
+            <div id="course" class="popular-course">
                 <div class="content">
                     <div class="row">
                         <div class="info-course">
@@ -168,32 +169,40 @@
                             </p>
                         </div>
                         <div class="arrow">
-                            <div
-                                class="arrow-item"
-                                style="
-                                    --arrow-bgc: #fff;
-                                    --arrow-bdc: 1px solid var(--button-bg);
-                                "
-                            >
-                                <img
-                                    src="./assets/image/less-than.svg"
-                                    alt=""
+                            <div class="arrow-item">
+                                <svg
                                     class="image"
-                                />
+                                    width="8"
+                                    height="14"
+                                    viewBox="0 0 8 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M7 1L1 7L7 13"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
                             </div>
 
-                            <div
-                                class="arrow-item"
-                                style="
-                                    --arrow-bgc: var(--button-bg);
-                                    --arrow-bdc: 1px solid transparent;
-                                "
-                            >
-                                <img
-                                    src="./assets/image/more-than.svg"
-                                    alt=""
+                            <div class="arrow-item">
+                                <svg
                                     class="image"
-                                />
+                                    width="8"
+                                    height="14"
+                                    viewBox="0 0 8 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 1L7 7L1 13"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -222,12 +231,7 @@
                                 </p>
                                 <div class="row row-book">
                                     <span class="price">$120.75</span>
-                                    <button
-                                        class="btn-book"
-                                        style="--bg-btn-book: var(--button-bg)"
-                                    >
-                                        Book Now
-                                    </button>
+                                    <button class="btn-book">Book Now</button>
                                 </div>
                             </div>
                         </div>
@@ -255,16 +259,7 @@
                                 </p>
                                 <div class="row row-book">
                                     <span class="price">$120.75</span>
-                                    <button
-                                        class="btn-book"
-                                        style="
-                                            --bg-btn-book: var(
-                                                --secondary-color
-                                            );
-                                        "
-                                    >
-                                        Book Now
-                                    </button>
+                                    <button class="btn-book">Book Now</button>
                                 </div>
                             </div>
                         </div>
@@ -292,16 +287,7 @@
                                 </p>
                                 <div class="row row-book">
                                     <span class="price">$120.75</span>
-                                    <button
-                                        class="btn-book"
-                                        style="
-                                            --bg-btn-book: var(
-                                                --secondary-color
-                                            );
-                                        "
-                                    >
-                                        Book Now
-                                    </button>
+                                    <button class="btn-book">Book Now</button>
                                 </div>
                             </div>
                         </div>
@@ -337,7 +323,8 @@
                             </div>
                         </div>
                         <div class="info-blockquote">
-                            <blockquote class="body">
+                            <img src="./assets/image/blockquote.svg" alt=""/>
+                            <blockquote class="desc">
                                 Not only does my resume look impressive—filled
                                 with the names and logos of world-class
                                 institutions—but these certificates also bring
