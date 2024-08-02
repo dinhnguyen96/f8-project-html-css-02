@@ -73,7 +73,6 @@ a {
 
 #header .list li:first-child .link {
     position: relative;
-    padding-left: 0;
     padding-bottom: 7px;
     color: var(--secondary-color);
     font-weight: 600;
@@ -82,7 +81,7 @@ a {
 #header .list li:first-child .link::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 21px;
     bottom: 0;
     width: 12px;
     height: 2px;
@@ -197,7 +196,7 @@ a {
 
 .hero-wrap .hero-info {
     width: 51%;
-    padding: 64px 0 65px 130px;
+    padding: 64px 0 63px 130px;
 }
 
 .hero-wrap .hero-info .title {
@@ -551,7 +550,7 @@ a {
 .advertise .advertise-body .desc {
     margin-top: 16px;
     color: var(--font-color);
-    font-weight: 400;   
+    font-weight: 400;
     line-height: 1.75;
 }
 
@@ -571,4 +570,55 @@ a {
     cursor: pointer;
     border-color: transparent;
     background-color: var(--button-bg);
+}
+
+.advertise .row-2 {
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.advertise .row-2 .body {
+    padding: 71px 0;
+    width: 49%;
+}
+
+.advertise .row-2 .body .sub-title {
+    color: var(--secondary-color);
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+
+.advertise .row-2 .body .desc {
+    margin-top: 16px;
+    color: var(--font-color);
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.advertise .body .btn-join {
+    margin-top: 32px;
+    min-width: 137px;
+    padding: 12px 32px 10px 31px;
+    border-radius: 26px;
+    background: var(--secondary-color);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+.advertise .body .btn-join:hover {
+    background-color: var(--button-bg);
+    border-color: transparent;
+}
+
+.advertise .row-2 .image {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
 }
