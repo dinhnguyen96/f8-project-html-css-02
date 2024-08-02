@@ -95,10 +95,10 @@ a {
     font-weight: 600;
 }
 
-#header .navbar-group .btn-cta {
+#header .navbar-group .btn-signup {
     min-width: 144px;
     font-family: "Poppins", sans-serif;
-    padding: 18px 41px 15px;
+    padding: 11px 41px;
     border-radius: 25px;
     font-size: 1.6rem;
     color: #fff;
@@ -106,7 +106,7 @@ a {
     background-color: var(--secondary-color);
 }
 
-#header .navbar-group .btn-cta:hover {
+#header .navbar-group .btn-signup:hover {
     cursor: pointer;
     background-color: var(--button-bg);
     border-color: transparent;
@@ -229,7 +229,7 @@ a {
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
-    padding: 25px 33px;
+    padding: 17px 33px;
     background-color: var(--secondary-color);
     border-color: transparent;
     border-radius: 32px;
@@ -311,7 +311,7 @@ a {
 
 /* popular course */
 .popular-course {
-    padding: 210px 0 200px;
+    padding: 200px 0 200px;
 }
 
 .popular-course .row {
@@ -433,7 +433,7 @@ a {
 
 .popular-course .row-book .btn-book {
     min-width: 118px;
-    padding: 18px 24px;
+    padding: 12px 24px;
     color: #fff;
     font-family: "Poppins", sans-serif;
     font-size: 1.4rem;
@@ -506,4 +506,69 @@ a {
     font-style: italic;
     font-weight: 400;
     line-height: 1.6;
+}
+
+/*  advertise */
+.advertise {
+    padding: 200px 0;
+}
+
+.advertise .row {
+    display: flex;
+}
+
+.advertise .row .advertise-image {
+    display: flex;
+    gap: 30px;
+    width: 49%;
+}
+
+.advertise .advertise-image .image {
+    width: 270px;
+    height: 405px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.advertise .advertise-image .image:last-child {
+    position: relative;
+    top: -34px;
+}
+
+.advertise .row .advertise-body {
+    padding: 24px 0 58px 130px;
+}
+
+.advertise .advertise-body .sub-title {
+    color: var(--secondary-color);
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+}
+
+.advertise .advertise-body .desc {
+    margin-top: 16px;
+    color: var(--font-color);
+    font-weight: 400;   
+    line-height: 1.75;
+}
+
+.advertise .advertise-body .btn-signup {
+    min-width: 137px;
+    margin-top: 32px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 26px;
+    padding: 11px 37px;
+    background-color: var(--secondary-color);
+}
+
+.advertise .advertise-body .btn-signup:hover {
+    cursor: pointer;
+    border-color: transparent;
+    background-color: var(--button-bg);
 }
