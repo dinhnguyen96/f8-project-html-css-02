@@ -755,30 +755,93 @@ a {
 
 .footer .list-info {
     display: flex;
+    gap: 130px;
 }
 
-.footer .list-info li:first-child .sub-title {
+.footer .list-info > li:first-child {
+    width: 34%;
+}
+
+.footer .list-info > li:last-child {
+    width: 30%;
+}
+
+.footer .list-info > li:first-child .sub-title {
     color: #fff;
     font-family: "Sen", sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
 }
 
-.footer .list-info li:first-child .marker {
+.footer .list-info > li:first-child .marker {
     color: #ffb900;
     font-size: 2.4rem;
     font-weight: 700;
 }
 
-.footer .list-info li:not(:first-child) .sub-title {
+.footer .list-info > li:first-child .desc,
+.social {
+    margin-top: 18px;
+}
+
+.footer .list-info .social .link-social + .link-social {
+    margin-left: 12px;
+}
+
+.footer .list-info > li:not(:first-child) .sub-title {
     color: #fff;
     font-weight: 600;
 }
 
 .footer .list-info .desc,
-.list-sub-info li .link {
+.list-sub-info li,.link {
     color: #bfbcb2;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.9;
+}
+
+.footer .list-info .link:hover {
+    text-decoration: underline;
+}
+
+.footer .list-info > li:not(:last-child) .link {
+    white-space: nowrap;
+}
+
+.footer .list-info > li .separate {
+    margin-top: 14px;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer .list-info .list-sub-info {
+    padding-top: 17px;
+}
+
+.footer .list-info .list-sub-info li {
+    margin-top: 12px;
+}
+
+.footer .list-info > li:last-child .location,
+.email,
+.phone {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.footer .separate {
+    height: 1px;
+    background: #59554b;
+    margin-top: 38px;
+}
+
+.footer .copyright {
+    margin-top: 29px;
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
