@@ -62,9 +62,13 @@ a {
     margin-right: 49px;
 }
 
+#header .list li {
+    --padding-left: 21px;
+}
+
 #header .list .link {
     padding-top: 9px;
-    padding-left: 21px;
+    padding-left: var(--padding-left);
     padding-right: 21px;
     padding-bottom: 9px;
     color: var(--font-color);
@@ -81,7 +85,7 @@ a {
 #header .list li:first-child .link::after {
     content: "";
     position: absolute;
-    left: 21px;
+    left: var(--padding-left);
     bottom: 0;
     width: 12px;
     height: 2px;
