@@ -67,10 +67,7 @@ a {
 }
 
 #header .list .link {
-    padding-top: 9px;
-    padding-left: var(--padding-left);
-    padding-right: 21px;
-    padding-bottom: 9px;
+    padding: 9px var(--padding-left);
     color: var(--font-color);
     font-weight: 400;
 }
