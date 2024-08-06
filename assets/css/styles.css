@@ -253,7 +253,6 @@ a {
     height: 40px;
     border-radius: 50%;
     border-color: transparent;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
 
@@ -271,6 +270,7 @@ a {
 
 .hero-wrap .watch-video .btn-watch:hover {
     cursor: pointer;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .hero-wrap .watch-video .title {
     color: var(--secondary-color);
