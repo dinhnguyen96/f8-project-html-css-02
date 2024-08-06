@@ -24,7 +24,6 @@ body {
 }
 
 /* General */
-
 a {
     text-decoration: none;
 }
@@ -427,6 +426,7 @@ a {
 
 .popular-course .body .row-book {
     margin-top: 15px;
+    align-items: center;
 }
 
 .popular-course .row-book .price {
