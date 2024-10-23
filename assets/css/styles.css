@@ -95,30 +95,30 @@ a.btn {
     align-items: center;
 }
 
-#header .list {
+#header .navbar .menu {
     display: flex;
     margin-right: 49px;
 }
 
-#header .list li {
+#header .menu li {
     --padding-left-right: 21px;
 }
 
-#header .list .active-link,
-.link {
+#header .menu .active-link,
+#header .menu .link {
     display: inline-block;
     padding: 9px var(--padding-left-right);
     color: var(--color);
     font-weight: 400;
 }
 
-#header .list li .active-link {
+#header .menu .active-link {
     position: relative;
     color: var(--secondary-color);
     font-weight: 600;
 }
 
-#header .list .active-link::after {
+#header .menu .active-link::after {
     content: "";
     left: var(--paddi-left-right);
     bottom: 2px;
@@ -128,12 +128,12 @@ a.btn {
     background-color: var(--secondary-color);
 }
 
-#header .list .link:hover {
+#header .menu .link:hover {
     color: var(--secondary-color);
     font-weight: 600;
 }
 
-#header .list .link::before {
+#header .menu .link::before {
     content: attr(title);
     display: block;
     height: 0;
@@ -245,7 +245,7 @@ a.btn {
     padding: 64px 0 63px 130px;
 }
 
-.hero-wrap .hero-info .title {
+.hero-wrap .hero-info > .title {
     color: var(--secondary-color);
     font-family: var(--secondary-font-family);
     font-size: 5.8rem;
@@ -315,7 +315,7 @@ a.btn {
     cursor: pointer;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
-.hero-wrap .watch-video .title {
+.hero-wrap .watch-video > .title {
     color: var(--secondary-color);
     font-size: 1.8rem;
     font-weight: 600;
@@ -414,12 +414,12 @@ a.btn {
 }
 
 .popular-course .list-items {
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
     margin-top: 55px;
 }
 .popular-course .list-items .link-item {
-    flex: 1;
     display: flex;
     flex-direction: column;
     border: 1px solid #e2dfda;
@@ -742,21 +742,15 @@ a.btn {
 }
 
 .blog .list-blog {
-    --space: 30px;
-    --item-number: 3;
-    display: flex;
-    column-gap: var(--space);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-top: 55px;
-    overflow-x: hidden;
 }
 
 .blog .list-blog .link-blog {
-    flex-shrink: 0;
     border-radius: 16px;
     background: #fff;
-    width: calc(
-        (100% - (var(--item-number) - 1) * var(--space)) / var(--item-number)
-    );
 }
 
 .blog .list-blog .link-blog:hover {
@@ -861,16 +855,13 @@ a.btn {
 }
 
 #footer .list-info {
-    display: flex;
-    gap: 130px;
+    display: grid;
+    grid-template-columns: 1fr 0.46fr 0.49fr 0.82fr;
+    column-gap: 130px;
 }
 
 #footer .list-info > li:first-child {
-    width: 32%;
-}
-
-#footer .list-info > li:last-child {
-    width: 30%;
+   width: 95%;
 }
 
 #footer .list-info > li:first-child .sub-title a {

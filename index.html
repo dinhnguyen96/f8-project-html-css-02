@@ -16,25 +16,34 @@
 
         <!-- Styles Css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- responsive css -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- header -->
+        <!-- header PC+Laptop -->
         <header id="header">
             <div class="content">
                 <nav class="navbar">
-                    <a href="#">
-                        <img
-                            src="./assets/image/logo.svg"
-                            alt="Lesson."
-                            class="image"
-                        />
+                    <!-- Tablet & Mobile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+                    <a href="#" class="logo">
+                        <img src="./assets/image/logo.svg" alt="Lesson." />
                     </a>
                     <div class="navbar-group">
-                        <ul class="list">
+                        <ul class="menu" id ="pc-nav">
                             <li>
-                                <a href="#" class="active-link" title="Home"
-                                    >Home</a
-                                >
+                                <a href="#" class="active-link" title="Home">Home</a>
                             </li>
                             <li>
                                 <a href="#course" class="link" title="Courses"
@@ -51,10 +60,47 @@
                                     >Pricing</a
                                 >
                             </li>
+                            <li>
+                                <a href="#signup" class="link link-sign-up"
+                                    >Signup</a
+                                >
+                            </li>
                         </ul>
                         <button class="btn btn-signup">Sign Up</button>
                     </div>
                 </nav>
+            </div>
+        </header>
+
+        <!-- Header tablet+mobile -->
+        <header id="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            
+            />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <div class="menu-drawer">
+                <!-- logo -->
+                <a href="#" class="logo">
+                    <img src="./assets/image/logo.svg" alt="Lesson." />
+                </a>
+                <!-- Navigation -->
+                <ul class="menu" id="mobile-nav">
+                </ul>
+
+                <script>
+                    const pcNav = document.querySelector("#pc-nav");
+                    const mobileNav = document.querySelector("#mobile-nav");
+
+                    //  copy from pc nav to mobile nav
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                </script>
             </div>
         </header>
 
@@ -312,6 +358,43 @@
                                 </div>
                             </div>
                         </a>
+                    </div>
+
+                    <div class="chevron chevron-bottom">
+                        <button class="chevron-icon">
+                            <svg
+                                class="image"
+                                width="8"
+                                height="14"
+                                viewBox="0 0 8 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M7 1L1 7L7 13"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <button class="chevron-icon">
+                            <svg
+                                class="image"
+                                width="8"
+                                height="14"
+                                viewBox="0 0 8 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 1L7 7L1 13"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
