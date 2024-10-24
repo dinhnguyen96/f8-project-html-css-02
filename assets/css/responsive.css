@@ -108,7 +108,7 @@
 }
 
 /* tablet */
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
     .hero-wrap .hero-info .desc {
         width: 80%;
         margin-left: auto;
