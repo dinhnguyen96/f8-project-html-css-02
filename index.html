@@ -19,6 +19,21 @@
 
         <!-- responsive css -->
         <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-5J6G94SC86"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-5J6G94SC86");
+        </script>
     </head>
     <body>
         <!-- header PC+Laptop -->
@@ -41,9 +56,11 @@
                         <img src="./assets/image/logo.svg" alt="Lesson." />
                     </a>
                     <div class="navbar-group">
-                        <ul class="menu" id ="pc-nav">
+                        <ul class="menu" id="pc-nav">
                             <li>
-                                <a href="#" class="active-link" title="Home">Home</a>
+                                <a href="#" class="active-link" title="Home"
+                                    >Home</a
+                                >
                             </li>
                             <li>
                                 <a href="#course" class="link" title="Courses"
@@ -80,7 +97,6 @@
                 id="menu-checkbox"
                 class="menu-checkbox"
                 hidden
-            
             />
             <!-- Overlay -->
             <label for="menu-checkbox" class="menu-overlay"></label>
@@ -91,8 +107,7 @@
                     <img src="./assets/image/logo.svg" alt="Lesson." />
                 </a>
                 <!-- Navigation -->
-                <ul class="menu" id="mobile-nav">
-                </ul>
+                <ul class="menu" id="mobile-nav"></ul>
 
                 <script>
                     const pcNav = document.querySelector("#pc-nav");
