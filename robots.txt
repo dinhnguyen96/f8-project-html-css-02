@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dinhnguyen96.github.io/f8-project-html-css-02/sitemap.xml
